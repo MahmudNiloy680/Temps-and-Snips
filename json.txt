@@ -1,0 +1,119 @@
+{
+    "C_Cpp.default.cStandard": "c17",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.terminalRoot": "/",
+    "code-runner.executorMapByGlob": {
+        "pom.xml": "cd \"$dir\" && mvn clean package"
+    },
+    "code-runner.executorMap": {
+    
+
+        
+
+    
+        "javascript": "node",
+        "java": "cd \"$dir\" && javac -d objects \"$fileName\" && java -cp objects \"$fileNameWithoutExt\"",
+        "zig": "zig run",
+        "objective-c": "cd \"$dir\" && gcc -framework Cocoa \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\"",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd \"$dirWithoutTrailingSlash\" --run \"$fileNameWithoutExt\"",
+        "rust": "cd \"$dir\" && rustc \"$fileName\" && \"$dir$fileNameWithoutExt\"",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd \"$dir\" && fpc \"$fileName\" && \"$dir$fileNameWithoutExt\"",
+        "d": "cd \"$dir\" && dmd \"$fileName\" && \"$dir$fileNameWithoutExt\"",
+        "haskell": "runghc",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd \"$dir\" && lessc \"$fileName\" \"$fileNameWithoutExt.css\"",
+        "FortranFreeForm": "cd \"$dir\" && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\"",
+        "fortran-modern": "cd \"$dir\" && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\"",
+        "fortran_fixed-form": "cd \"$dir\" && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\"",
+        "fortran": "cd \"$dir\" && gfortran \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\"",
+        "sml": "cd \"$dir\" && sml \"$fileName\"",
+        // WITHOUT TEXT FILE
+        "c": "cd \"$dir\" && mkdir -p output && gcc \"$fileName\" -o \"./output/$fileNameWithoutExt.exe\" && \"./output/$fileNameWithoutExt.exe\"",
+        "cpp": "cd \"$dir\" && mkdir -p output && g++ \"$fileName\" -o \"./output/$fileNameWithoutExt.exe\" && \"./output/$fileNameWithoutExt.exe\"",
+        // WITH TEXT FILE (for input/output redirection)
+        // "c": "cd \"\"$dir\"\" && mkdir -p output && gcc \"$fileName\" -o \"./output/$fileNameWithoutExt.exe\" && (timeout 15s \"./output/$fileNameWithoutExt.exe\" < \"input.txt\" > \"output.txt\" || (echo -n > \"output.txt\" && echo 'Time Limit Gone'))",
+        // "cpp": "cd \"\"$dir\"\" && mkdir -p output && g++ \"$fileName\" -o \"./output/$fileNameWithoutExt.exe\" && (timeout 15s \"./output/$fileNameWithoutExt.exe\" < \"input.txt\" > \"output.txt\" || (echo -n > \"output.txt\" && echo 'Time Limit Gone'))"
+    },
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay",
+    "git.confirmSync": false,
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        }
+    },
+    "editor.fontSize": 13,
+    "editor.largeFileOptimizations": false,
+    "workbench.editorAssociations": {
+        "*.docx": "default"
+    },
+    "github.copilot.advanced": {},
+    "redhat.telemetry.enabled": true,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "workbench.colorTheme": "Theme Mix",
+    "git.openRepositoryInParentFolders": "always",
+    "git.autofetch": true,
+    "workbench.editor.empty.hint": "hidden",
+    "python.createEnvironment.trigger": "off",
+    "diffEditor.codeLens": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "css.validate": false,
+    "excalidraw.theme": "dark",
+    "workbench.iconTheme": "file-icons-colourless",
+    "window.confirmSaveUntitledWorkspace": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "editor.minimap.enabled": false,
+}

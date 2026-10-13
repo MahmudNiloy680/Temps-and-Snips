@@ -1,0 +1,294 @@
+	//{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// 
+	//}
+{
+  "1": 
+  {
+    "prefix": "cpp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main()",
+      "{",
+      "    $0",
+      "",
+      "    return 0;",
+      "}"
+    ],
+    "description": "creates a basic cpp template"
+  },
+
+  "2": 
+  {
+    "prefix": "fcpp",
+    "body": [
+      "// Author: Mahmud Niloy",
+      "// Created: ${CURRENT_DATE}-${CURRENT_MONTH}-${CURRENT_YEAR}",
+      "",
+      "#include <bits/stdc++.h>",
+      "#include <ext/pb_ds/assoc_container.hpp>",
+      "#include <ext/pb_ds/tree_policy.hpp>",
+      "using namespace std;",
+      "using namespace __gnu_pbds;",
+      "",
+      "using ll = long long;",
+      "using ull = unsigned long long;",
+      "using ld = long double;",
+      "#define nl '\\n'",
+      "#define tt(x) ll x; cin >> x; while (x--)",
+      "#define vecin(v) for (auto &x : v) cin >> x",
+      "#define all(v) v.begin(), v.end()",
+      "#define rall(v) v.rbegin(), v.rend()",
+      "#define yes cout << \"YES\\n\"",
+      "#define no cout << \"NO\\n\"",
+      "",
+      "template <typename T> using pbds = tree<T , null_type, less_equal<T>, rb_tree_tag,",
+      "tree_order_statistics_node_update>;",
+      "",
+      "",
+      "void solve()",
+      "{",
+      "    $0",
+      "    ",
+      "    return;",
+      "}",
+      "",
+      "int main()",
+      "{",
+      "    ios::sync_with_stdio(false);",
+      "    cin.tie(nullptr);",
+      "",
+      "    solve();",
+      "    ",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Template for CP without test case"
+  },
+
+  "3": 
+  {
+    "prefix": "node",
+    "body": [
+      "class Node",
+      "{",
+      "    public:",
+      "        int val;",
+      "        Node* next;",
+      "        Node(int val)",
+      "        {",
+      "            this->val = val;",
+      "            this->next = NULL;",
+      "        }",
+      "};"
+    ],
+    "description": "Class_Node"
+  },
+
+  "4": 
+  {
+    "prefix": "bnode",
+    "body": [
+      "class Node",
+      "{",
+      "    public:",
+      "        int val;",
+      "        Node* left;",
+      "        Node* right;",
+      "        Node(int val)",
+      "        {",
+      "            this->val = val;",
+      "            this->left = NULL;",
+      "            this->right = NULL;",
+      "        }",
+      "};"
+    ],
+    "description": "binary Tree Node"
+  },
+
+  "5": 
+  {
+    "prefix": "binput",
+    "body": [
+      "Node* input_tree()",
+      "{",
+      "    int val;",
+      "    cin >> val;",
+      "",
+      "    Node* root = (val == -1) ? NULL : new Node(val);",
+      "    ",
+      "    queue<Node*> q;",
+      "    if(root)",
+      "        q.push(root);",
+      "    while(!q.empty())",
+      "    {",
+      "        int l, r;",
+      "        cin >> l >> r;",
+      "",
+      "        Node* parent, *leftChild, *rightChild;",
+      "",
+      "        parent = q.front();",
+      "        q.pop();",
+      "",
+      "        leftChild = (l == -1) ? NULL : new Node(l);",
+      "        rightChild = (r == -1) ? NULL : new Node(r);",
+      "",
+      "        parent->left = leftChild;",
+      "        parent->right = rightChild;",
+      "",
+      "        if(parent->left)",
+      "            q.push(parent->left);",
+      "        if(parent->right)",
+      "            q.push(parent->right);",
+      "    }",
+      "    return root;",
+      "}"
+    ],
+    "description": "Binary Tree Input"
+  },
+
+  "6": 
+  {
+    "prefix": "pl",
+    "body": [
+      "// Problem Link: $0"
+    ],
+    "description": ""
+  },
+
+  "7":
+  {
+    "prefix": "leetcode",
+    "body": [
+      "// Problem Link:",
+      "",
+      "// Author: Mahmud Niloy",
+      "// Created: ${CURRENT_DATE}-${CURRENT_MONTH}-${CURRENT_YEAR}",
+      "",
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "using ll = long long;",
+      "using ull = unsigned long long;",
+      "using ld = long double;",
+      "const ll MOD = 998244353;",
+      "#define nl '\\n'",
+      "#define tt(x) ll x; cin >> x; while (x--)",
+      "#define vecin(v) for (auto &x : v) cin >> x",
+      "#define all(v) v.begin(), v.end()",
+      "#define rall(v) v.rbegin(), v.rend()",
+      "#define forn(var, start, end) for (int var = start; var < end; var++)",
+      "#define rforn(var, start, end) for (int var = start; var >= end; var--)",
+      "#define yes cout << \"YES\\n\"",
+      "#define no cout << \"NO\\n\"",
+      "",
+      "",
+      "class Solution",
+      "{",
+      "    public:",
+      "        $0",
+      "        ",
+      "};",
+      "",
+      "int main()",
+      "{",
+      "    ios::sync_with_stdio(false);",
+      "    cin.tie(nullptr);",
+      "",
+      "    Solution ans;",
+      "",
+      "    return 0;",
+      "}"
+    ],
+    "description": ""
+  },
+
+  "8":
+  {
+    "prefix": "fcppt",
+    "body": [
+      "// Author: Mahmud Niloy",
+      "// Created: ${CURRENT_DATE}-${CURRENT_MONTH}-${CURRENT_YEAR}",
+      "",
+      "#include <bits/stdc++.h>",
+      "#include <ext/pb_ds/assoc_container.hpp>",
+      "#include <ext/pb_ds/tree_policy.hpp>",
+      "using namespace std;",
+      "using namespace __gnu_pbds;",
+      "",
+      "using ll = long long;",
+      "using ull = unsigned long long;",
+      "using ld = long double;",
+      "#define nl '\\n'",
+      "#define tt(x) ll x; cin >> x; while (x--)",
+      "#define vecin(v) for (auto &x : v) cin >> x",
+      "#define all(v) v.begin(), v.end()",
+      "#define rall(v) v.rbegin(), v.rend()",
+      "#define yes cout << \"YES\\n\"",
+      "#define no cout << \"NO\\n\"",
+      "",
+      "template <typename T> using pbds = tree<T , null_type, less_equal<T>, rb_tree_tag,",
+      "tree_order_statistics_node_update>;",
+      "",
+      "",
+      "void solve()",
+      "{",
+      "    $0",
+      "    ",
+      "    return;",
+      "}",
+      "",
+      "int main()",
+      "{",
+      "    ios::sync_with_stdio(false);",
+      "    cin.tie(nullptr);",
+      "",
+      "    tt(T)",
+      "    solve();",
+      "    ",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Template for CP with test case"
+  },
+
+  "9":
+  {
+    "prefix": "sieve",
+    "body": [
+      "vector<long long> primes;",
+      "void sieve(ll n)",
+      "{",
+      "    vector<bool> isPrime(n+5, true);",
+      "    isPrime[0] = isPrime[1] = false;",
+      "    for (ll i = 2; i <= n; i++)",
+      "    {",
+      "        if (isPrime[i])",
+      "        {",
+      "            primes.push_back(i);",
+      "            if (1LL * i * i <= n)",
+      "            {",
+      "                for (long long j = 1LL * i * i; j <= n; j += i)",
+      "                    isPrime[j] = false;",
+      "            }",
+      "        }",
+      "    }",
+      "    return;",
+      "}"
+    ],
+    "description": "Sieve of Eratosthenes"
+  },
+}
